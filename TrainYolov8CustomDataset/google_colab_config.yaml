@@ -1,0 +1,6 @@
+path: '/content/drive/MyDrive/TrainYolov8CustomDataset/data'
+train: images/train
+val: images/train
+
+names:
+ 0: matricule
