@@ -30,7 +30,7 @@ we didn't have labels to train the object detection model so we created them usi
 
 ## Overview:
 
-this repo contains 4 folders and a .ipynb file ,
+this repo contains 4 folders and a .ipynb file <br />
 1.to train the yolov8 model search trainingyolov8.ipynb inside the "trainyolov8customdataset" folder the .ipynb file is well commented an will guide you through the training 
 <br />
 
