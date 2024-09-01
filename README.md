@@ -1,25 +1,36 @@
-# license plate recognition 
+# license plate recognition
 
+  
+  
 
-reading license plates numbers using ai  
+reading license plates numbers using ai
+
+  
 
 ## Table of Contents
 
+  
+
 - [approach](#approach)
+
 - [repository overview](#repositoroverview)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-- [Contact Information](#contact-information)
+
+
+
+  
 
 ## Approach
-we chose to combine two models, an object detection model (yolov8) and an ocr model (easyocr)
-the image is given to the object detection model that will detect only the licence and then crop it and send it to the ocr model to read it 
-we didn't have labels to train the object detection model so we created them using the labelimg tool 
-## Overview:
-this repo contains 3 folders and a ipynb file , one directory contains the training for  yolov8  ,the other contains the training for easyocr ,the third folder contains the final trained weights for both models
-and the ipynb file contains the the final model wich is the combination of both models 
-to make  predictions run the ipynb file 
-to retrain one of the models search for the .ipynb file in its folder it should be well commented and will guide through the training 
 
+we chose to combine two models, an object detection model (yolov8) and an ocr model (easyocr)
+
+the image is given to the object detection model that will detect only the licence and then crop it and send it to the ocr model to read it
+
+we didn't have labels to train the object detection model so we created them using the labelimg tool
+
+## Overview:
+
+this repo contains 4 folders and a .ipynb file ,
+1.to train the yolov8 model search trainingyolov8.ipynb inside the "trainyolov8customdataset" folder the .ipynb file is well commented an will guide you through the training
+2.to train the easyocr model search for training_easyocr.ipynb in the "deep_text_recognition" folder  the .ipynb file is well commented an will guide you through the training
+3.to use the final trained model (wich is a combination between yolo and easyocr ) just open the final_model.ipynb file in the main directory the file  is well commented an will guide you through setting up, the model
+4.the final_predictions folder contains  log_demo_result.csv file containing img_id and the predicted labels it also contain a format_to_submission_format.py file that transformes the log_demo_result.csv.csv file to the format required for the rim-ai-competition submission 
